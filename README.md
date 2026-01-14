@@ -71,3 +71,42 @@ src/
 ├── lib/                 # Utility functions and helpers
 demos/                   # Demo guides and templates
 ```
+
+## Testing
+
+This project uses a comprehensive testing strategy with multiple layers:
+
+- **Unit Tests**: Vitest + React Testing Library
+- **Integration Tests**: MSW for API mocking
+- **E2E Tests**: Playwright for browser automation
+
+### Running Tests
+
+```bash
+# Run unit tests in watch mode
+npm run test
+
+# Run unit tests once
+npm run test:run
+
+# Run with coverage report
+npm run test:coverage
+
+# Run E2E tests
+npm run test:e2e
+
+# Run E2E tests with UI
+npm run test:e2e:ui
+```
+
+### Test Coverage
+
+The project maintains the following coverage thresholds:
+- **Lines**: 80%
+- **Functions**: 80%
+- **Branches**: 75%
+- **Statements**: 80%
+
+### Documentation
+
+For detailed information about our testing strategy, best practices, and examples, see the [Testing Documentation](docs/testing/README.md).
